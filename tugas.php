@@ -5,6 +5,10 @@
     $bunga_a = 0.05;
     $bunga_b = 0.045;
 
+    //Mrnghitung Total Bungan
+    $totalBunga_a = $hutang_a * $bunga_a;
+    $totalBunga_b = $hutang_b * $bunga_b;
+
     // Menghitung Total Hutang
     $total_hutang = $hutang_a + $hutang_b;
 
@@ -12,7 +16,7 @@
     $sisa_uang = $pemasukan - $total_hutang - $totalBunga_a - $totalBunga_b;
 
     //Output Program
-    echo "sisa uang : ".number_format($sisa_uang, 0, ',', '.')."\n";
-    echo "Jumlah total bunga hutang : ".number_format($totalBunga_a + $totalBunga_b, 0, ',', '.')."\n";
-    echo "Jumlah total hutang : ".number_format($total_hutang, 0, ',', '.')."\n";
+    echo "Sisa Uang : Rp. ".number_format($sisa_uang, 0, ',','.')."\n";
+    echo "Jumlah Total Bunga Hutang : Rp. ".number_format($totalBunga_a + $totalBunga_b, 0, ',','.')."\n";
+    echo "Jumlah Total Hutang : Rp. ".number_format($total_hutang, 0, ',','.')."\n";
 ?>
